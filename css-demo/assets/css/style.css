@@ -13,6 +13,7 @@ html {
 body {
     background-color: white;
     font-family: "Alan Sans", sans-serif;
+    margin: 0;
 }
 
 /* ----------- Header Styles ------------- */
@@ -23,4 +24,15 @@ header.primary {
     padding: 20px;
     text-align: center;
     text-shadow: 1px 1px 2px gray;
-}
+    /* long form */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* Single value short hand */
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    }
