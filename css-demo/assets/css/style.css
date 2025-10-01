@@ -63,6 +63,9 @@ header.primary nav {}
 
 header.primary nav ul {
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 header.primary nav li {
@@ -72,5 +75,8 @@ header.primary nav li {
 
 header.primary nav a {
     color: #ffffff;
-    text-decoration: none;
+    font-size: .9rem;
+    background-color: rgba(0, 0 , 0 , .4);
+    padding: 10px 15px;
+
 }
