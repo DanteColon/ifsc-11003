@@ -36,3 +36,41 @@ header.primary {
     /* Two Value Top/Bottom / L/R */
     padding: 20px 40px;
     }
+
+header.primary h1 {
+    font-size: 3rem;
+    color: #ffffff
+    ;
+}
+
+header.primary h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header.primary a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header.primary h2 a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header.primary nav {}
+
+header.primary nav ul {
+    padding: 0;
+}
+
+header.primary nav li {
+    list-style-type: none;
+
+}
+
+header.primary nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
