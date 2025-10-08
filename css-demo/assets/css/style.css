@@ -1,51 +1,59 @@
-/* ----------- Box Sizing ------------- */
+/*  ---------------Box Sizing----------------- */
 
 html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-/* ----------- Global Styles ------------- */
+/*  ---------------Utility Classes----------------- */
 
+.container {
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+/*  ---------------Responsive Images----------------- */
+img {
+    max-width: 100%;
+}
+
+
+/*  ---------------Global Styles----------------- */
 body {
-    background-color: white;
+    background-color: #ffffff;
     font-family: "Alan Sans", sans-serif;
     margin: 0;
 }
 
-/* ----------- Header Styles ------------- */
-
 header.primary {
-    background-color: #f4f4f4;
-    color: black;
-    padding: 20px;
+    background: #3B638B;
+    color: #ffffff;
     text-align: center;
-    text-shadow: 1px 1px 2px gray;
-    /* long form */
+    text-shadow: 1px 1px #000000;
+    /*long form*/
     padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-    /* Single value short hand */
+    /*Single value short hand*/
     padding: 40px;
     /* T,R,B,L */
     padding: 20px 40px 20px 40px;
     /* Two Value Top/Bottom / L/R */
     padding: 20px 40px;
-    }
-
-header.primary h1 {
-    font-size: 3rem;
-    color: #ffffff
-    ;
 }
 
-header.primary h1 a {
+header.primary h1 {
+    font-size: 2.4rem;
     color: #ffffff;
-    text-decoration: none;
+    /* top | left and right | bottom */
+    margin: 20px 0 0;
 }
 
 header.primary a {
@@ -53,10 +61,10 @@ header.primary a {
     text-decoration: none;
 }
 
-header.primary h2 a {
-    color: #ffffff; 
-    text-decoration: none;
-    font-size: 1.5rem;
+header.primary h2 {
+    font-size: 1.3rem;
+    letter-spacing: .3px;
+    margin: 0;
 }
 
 header.primary nav {}
@@ -65,26 +73,73 @@ header.primary nav ul {
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 20px auto 10px;
 }
 
 header.primary nav li {
     list-style-type: none;
-
 }
 
 header.primary nav a {
     color: #ffffff;
     font-size: .9rem;
-    background-color: rgba(0, 0 , 0 , .4);
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, .4);
+    background-color: rgba(0, 0, 0, .4);
+    padding: 5px 7.5px;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    transition: .4s;
 }
 
 header.primary nav a:hover {
-    background-color: rgba(255, 255, 255, .4);
-    color: black;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#intro h2 {
+    color: #3B638B;
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#content .post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: .8rem;
+}
+
+figure {
+    margin: 0
+}
+
+#content time,
+figcaption {
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+
+#content a {
+    color: #3B638B;
+}
+
+/*------------------Media Queries -------------------*/
+
+@media screen and (max-width:500px) {
+
+    header.primary nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header.primary nav a {
+        display: block;
+    }
+
+
 }
