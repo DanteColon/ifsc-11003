@@ -22,9 +22,24 @@ float:right;
 border: 3px double #ccc;
 padding:5px;
 border-radius:5px;
+margin: 10px 0 10px 20px;  
 }
 
+.img-left{
+float:left;  
+border: 3px double #ccc;
+padding:5px;
+border-radius:5px;
+margin: 10px 20px 10px 0;  
+}
 
+.img-center{
+display:block;
+margin: 10px auto;
+border: 3px double #ccc;
+padding:5px;
+border-radius:5px;
+}
 
 
 /*  ---------------Responsive Images----------------- */
@@ -140,6 +155,12 @@ figure{margin:0}
 #practice a:link, #practice a:visited {
   color: #3b638b;
 }
+
+#practice h3{
+  border-left:7.5px solid #3b638b;
+  padding:5px 0 5px 7.5px;
+}
+
 
 
 
