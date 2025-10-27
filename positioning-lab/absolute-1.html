@@ -8,61 +8,100 @@
   <title>Positioning Lab</title>
   <style type="text/css">
     /* ---------------Box Sizing----------------- */
-    html {
+    * {
       box-sizing: border-box;
     }
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
+
     body {
-      background-color: #ECECEC;
-      font-weight: bold;
-      font-family: Tahoma, Geneva, sans-serif;
-      color: #FFF;
+      background: #ECECEC;
+      font: bold 16px Tahoma, sans-serif;
+      color: #fff;
       text-align: center;
       line-height: 24px;
+      margin: 0;
     }
+
     #wrapper {
-      background-color: #FFF;
-      border: 1px solid #c0c0c0;
       width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      text-shadow: 2px 2px #000;
+      margin: 0 auto;
+      background: #e9e9e9;
+      border: 1px solid #c0c0c0;
+      position: relative;
+      padding: 60px 0 140px;
+      min-height: 520px;
     }
-    #navy {
-      background-color: #001f3f;
+
+    #wrapper::after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 170px;
+      margin: 40px auto 0;
+      background: #fff;
+      border: 1px solid #c0c0c0;
     }
-    #teal {
-      background-color: #39CCCC;
-    }
-    #blue {
-      background-color: #0074D9;
-    }
+
+    #navy,
+    #teal,
+    #blue,
     #aqua {
-      background-color: #7FDBFF;
+      position: absolute;
+      width: 120px;
+      height: 120px;
     }
+
+    #navy {
+      background: #001f3f;
+      top: 80px;
+      left: 0;
+    }
+
+    #teal {
+      background: #39CCCC;
+      top: 80px;
+      right: 0;
+    }
+
+    #blue {
+      background: #0074D9;
+      bottom: 0;
+      left: 0;
+    }
+
+    #aqua {
+      background: #7FDBFF;
+      bottom: 0;
+      right: 0;
+    }
+
     #footer {
-      background-color: #666;
+      background: #666;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 50%;
+      top: 265px;
+      transform: translateX(-50%);
     }
+
     h1 {
       color: #000;
       font-weight: normal;
-      padding: 50px;
+      margin: 0;
+      padding: 20px 0 0;
     }
   </style>
 </head>
+
 <body>
   <h1>Absolute 1
-  <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
-    <div id="footer">Footer</div>
-  </section>
+    <section id="wrapper">
+      <div id="navy">Navy</div>
+      <div id="teal">Teal</div>
+      <div id="blue">Blue</div>
+      <div id="aqua">Aqua</div>
+      <div id="footer">Footer</div>
+    </section>
 </body>
 
 </html>

@@ -8,52 +8,80 @@
   <title>Positioning Lab</title>
   <style type="text/css">
     /* ---------------Box Sizing----------------- */
-    html {
+    * {
       box-sizing: border-box;
     }
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
+
     body {
-      background-color: #ECECEC;
+      background: #ECECEC;
+      font-family: Tahoma, sans-serif;
       font-weight: bold;
-      font-family: Tahoma, Geneva, sans-serif;
-      color: #FFF;
       text-align: center;
-      line-height: 24px;
+      color: #fff;
+      margin: 0;
     }
+
     #wrapper {
-      background-color: #FFF;
-      border: 1px solid #c0c0c0;
       width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      text-shadow: 2px 2px #000;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #c0c0c0;
+      position: relative;
+      height: 600px;
     }
-    #navy {
-      background-color: #001f3f;
-    }
-    #teal {
-      background-color: #39CCCC;
-    }
-    #blue {
-      background-color: #0074D9;
-    }
+
+    #navy,
+    #teal,
+    #blue,
     #aqua {
-      background-color: #7FDBFF;
+      width: 150px;
+      height: 150px;
+      position: absolute;
     }
+
+    #navy {
+      background: #001f3f;
+      top: 0;
+      left: 0;
+    }
+
+    #teal {
+      background: #39CCCC;
+      top: 0;
+      right: 0;
+    }
+
+    #blue {
+      background: #0074D9;
+      bottom: 0;
+      left: 0;
+    }
+
+    #aqua {
+      background: #7FDBFF;
+      bottom: 0;
+      right: 0;
+    }
+
     #footer {
-      background-color: #666;
+      background: #666;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
+
     h1 {
       color: #000;
       font-weight: normal;
-      padding: 50px;
+      margin: 0;
+      padding: 15px 0;
     }
   </style>
 </head>
+
 <body>
   <h1>Absolute 2</h1>
   <section id="wrapper">
