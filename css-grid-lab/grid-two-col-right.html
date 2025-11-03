@@ -33,6 +33,22 @@
       max-width: 80vw;
       margin: 20px auto;
     }
+
+    main {
+        grid-template-columns: 3fr 1fr;
+    }
+        header.primary {
+          grid-column: 1 / -1;
+    }
+        footer.primary {
+          grid-column: 1 / -1;
+    }
+    aside {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-row-end: 4;
+      grid-column-end: 3;
+    }
   </style>
 
 </head>
