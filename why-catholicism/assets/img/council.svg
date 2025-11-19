@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Scroll and quill</title>
+  <desc id="desc">A scroll with a quill to symbolize councils, creeds, and canonical lists.</desc>
+  <rect width="120" height="120" rx="16" ry="16" fill="#f2f5ff"/>
+  <g>
+    <rect x="28" y="24" width="64" height="72" rx="8" fill="#fff" stroke="#2b3a55" stroke-width="2"/>
+    <rect x="34" y="34" width="52" height="4" fill="#d7def1"/>
+    <rect x="34" y="44" width="52" height="4" fill="#d7def1"/>
+    <rect x="34" y="54" width="38" height="4" fill="#d7def1"/>
+    <rect x="34" y="64" width="46" height="4" fill="#d7def1"/>
+    <rect x="34" y="74" width="32" height="4" fill="#d7def1"/>
+    <path d="M84 86c6 6 10 14 8 16-2 2-10-2-16-8l8-8z" fill="#a28b55"/>
+    <path d="M79 81l-18 12 12-18 6 6z" fill="#d3c39b"/>
+  </g>
+</svg>
